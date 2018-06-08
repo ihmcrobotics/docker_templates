@@ -68,6 +68,9 @@ def populate_paths(manifest, args, create_dockerfiles):
                 populate_path(data=os_code_data, path=dockerfolder_dir)
 
                 if os_code_data['tag_names'] is None:
+                    print(os_code_name)
+                    print(os_code_data)
+                    print(dockerfolder_dir)
                     continue
                 if args.auto:
                     # Run the dockerfile generation script
